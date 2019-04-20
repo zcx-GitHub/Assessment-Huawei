@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#website{
+    width: 100%;
+    height: 25px;
+    background-color: black;
+}
+.website{
+    width: 86%;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.huaweiWebsite{
+    font-size: 12px;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+.selectWhere{
+    float: right;
+    color: white;
+    font-size: 12px;
+    margin-right: 20px;
+    margin-top: 3px;
+    text-decoration: none;
+}
+.string{
+    float: right;
+    width: 1px;
+    height: 23px;
+    margin-right: 20px;
+    background-color: white;
+}
+.huaweiLand{
+    float: right;
+    color: white;
+    font-size: 12px;
+    margin-right: 10px;
+    margin-top: 3px;
+    text-decoration: none;
+}
+.huaweiWebsite-hide{
+    width: 100%;
+    height: 170px;
+    border: 1px solid gray;
+    display: none;
+    font-size: 14px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    min-width: 900px;
+}
+.huaweiWebsite-hide ul{
+    list-style: none;
+    width: 82%;
+    margin: 50px auto;
+}
+.huaweiWebsite-hide ul li{
+    width: 20%;
+    display: inline-block;
+    margin-left: 3%;
+}
+.huaweiWebsite-hideColor{
+    color: orangered;
+}
+
+.selectWhere-hide{
+    width: 100%;
+    height: 300px;
+    border: 1px solid gray;
+    display: none;
+    font-size: 14px;
+}
+.HuaweiGlobalEnglish{
+    margin-left: 6%;;
+    margin-top: 32px;
+}
+.selectWhere-hide ul{
+    list-style: none;
+    width: 88%;
+    margin: 18px auto;
+}
+.selectWhere-hide ul li{
+    display: inline-block;
+    width: 18%;
+    margin-top: 19px;
+}
+.selectWhere-hide ul a{
+    color: black;
+}
+
+
+/*导航栏*/
+.huaweiLogo{
+    width: 100%;
+    height: 80px;
+    min-width: 900px;
+    box-shadow: 10px 10px 10px #888888;
+}
+.logo{
+    width: 86%;
+    margin: 0 auto;
+    overflow: hidden;
+    min-width: 900px;
+}
+.logoPicture{
+    width: 140px;
+    margin-top: 25px;
+    float: left;
+}
+.logoCenterRight{
+    width: 80%;
+    height: 80px;
+    margin: auto;
+    overflow: hidden;
+}
+.logoLeft{
+    float: left;
+    width: 55%;
+    height: 80px;
+    font-size: 18px;
+    display: inline-block;
+    overflow: hidden;
+}
+.iphonePicture{
+    float: left;
+    width: 40px;
+    height: 50px;
+    margin-top: 13px;
+}
+.logoLeft ul{
+    list-style: none;
+    height: 80px;
+}
+.logoLeft ul li{
+    display: inline-block;
+    margin-right: 25px;
+    margin-top: 30px;
+    min-width: 80px;
+}
+.logoLeft a{
+    text-decoration: none;
+    color: black;
+}
+.logoCenter{
+    float: left;
+    width: 37%;
+    height: 80px;
+}
+.logoCenter ul{
+    list-style: none;
+}
+.logoCenter ul li {
+    display: inline-block;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+.logoCenter ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+.logoSearch{
+    float: right;
+    width: 8%;
+    height: 80px;
+    font-size: 30px;
+}
+.logoSearchSearch{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
