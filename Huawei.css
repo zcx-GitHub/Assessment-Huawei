@@ -97,7 +97,7 @@
     width: 100%;
     height: 80px;
     min-width: 900px;
-    box-shadow: 10px 10px 10px #888888;
+    box-shadow: 5px 5px 5px #aaaaaa;
 }
 .logo{
     width: 86%;
@@ -171,5 +171,256 @@
 .logoSearchSearch{
     margin-top: 20px;
     margin-left: 20px;
+    cursor: pointer;
+}
+
+
+
+.logoLeft-hide{
+    width: 100%;
+    height: 380px;
+    background-color: #F4F3F0;
+    overflow: hidden;
+    display: none;
+}
+.logoLeft-hidePicture{
+    float: left;
+    margin-left: 7%;
+    width:22%;
+    height: 400px;
+}
+.logoLeft-hidePicture img{
+    margin-top: 40px;
+    width: 250px;
+    height: 270px;
+}
+.knowMore{
+    width: 150px;
+    height: 45px;
+    background-color: coral;
+    border-radius: 7px;
+    border-style: none;
+    color: white;
+    font-size: 19px;
+    margin-left: 130px;
+    margin-top: -40%;
+}
+.hide-tuBiao{
+    float: left;
+    width: 50%;
+    height: 400px;
+}
+.hide-tuBiao ul{
+    list-style: none;
+    width: 100%;
+    height: 150px;
+}
+.hide-tuBiao ul li{
+    display: inline-block;
+    width: 6%;
+    height: 75px;
+    margin: 25px 78px;
+}
+.hide-tuBiao p{
+    margin-left: 40px;
+    margin-top: 20px;
+}
+.hide-tuBiao a{
+    text-decoration: none;
+    color: black;
+}
+.hide-tuBiao a:hover{
+    text-decoration: black;
+}
+.hide-tuBiao span{
+    color: palevioletred;
+}
+.hide-help{
+    float: left;
+    width: 21%;
+    height: 400px;
+    line-height: 30px;
+}
+.hide-help p{
+    font-size: 16px;
+    color: black;
+    margin-left: 30px;
+}
+.visit{
+    margin-top: 60px;
+}
+.visit a{
+    text-decoration: none;
+    color: black;
+}
+.visit span{
+    font-size: 15px;
+    margin-left: 7px;
+    color: palevioletred;
+}
+
+
+.logoLeft-hideServe{
+    width: 100%;
+    height: 400px;
+    background-color: #F4F3F0;
+    display: none;
+}
+.hideServe-logo{
+    width: 100%;
+    height: 55px;
+}
+.hideServe-logo ul{
+    width: 36%;
+    height: 55px;
+    margin: auto;
+    list-style: none;
+}
+.hideServe-logo ul li{
+    display: inline-block;
+    margin-top: 17px;
+    margin-left: 55px;
+    color: #aaaaaa;
+}
+.hideString{
+    width: 100%;
+    height: 1px;
+    background-color: #aaaaaa;
+}
+
+
+
+.content1-left{
+    float: left;
+    width: 30%;
+    height: 344px;
+}
+.content1-leftUl{
+    margin-left: 130px;
+    list-style: none;
+    height: 300px;
+}
+.content1-leftUl li{
+    cursor: pointer;
+    margin-top: 20px;
+}
+.content1-leftUl li span{
+    color: palevioletred;
+}
+
+
+.hideContent-img{
+    float: left;
+    width: 30%;
+    height: 344px;
+    line-height: 25px;
+}
+.hideContent-img img{
+    width: 200px;
+    height: 200px;
+    margin-left: 110px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+.imgSpan1{
+    margin-left: 180px;
+}
+.imgSpan2{
+    margin-left: 140px;
+}
+.hideContent-content{
+    float: left;
+    width: 40%;
+    height: 344px;
+    font-size: 15px;
+    color: black;
+}
+.hideContent-content a{
+    text-decoration: none;
+    color: palevioletred;
+}
+.contentLeft{
+    float: left;
+    width: 55%;
+    height: 300px;
+    list-style: none;
+}
+.contentLeft li{
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.contentRight{
+    float: left;
+    width: 45%;
+    height: 300px;
+    list-style: none;
+}
+.contentRight li{
+    margin-top: 20px;
+    margin-left: 10px;
+
+}
+.contentBottom{
+    margin-left: 20px;
+}
+.contentBottom span{
+    color: black;
+}
+.hideContent-help{
+    float: left;
+    width: 30%;
+    height: 344px;
+    background-color: #3a362e1a;
+}
+.hideContent-help ul{
+    margin-top: 20px;
+    list-style: none;
+}
+.hideContent-help ul li{
+    line-height: 40px;
+    margin-left: 20px;
+}
+.hideContent-help p{
+    margin-top: 40px;
+    margin-left: 20px;
+}
+.hideContent-help a{
+    text-decoration: none;
+    color: black;
+}
+.hideContent-help span{
+    color: palevioletred;
+}
+
+
+
+.logoHideSearch{
+    width: 100%;
+    min-width: 900px;
+    display: none;
+}
+.logoSearchContent{
+    width: 86%;
+    height: 80px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.logoSearchContent img{
+    width: 140px;
+    margin-top: 25px;
+}
+.logoSearchContent input{
+    width: 330px;
+    height: 45px;
+    border-radius: 7px;
+    border: 1px solid darkgray;
+    margin-left: 400px;
+    outline: none;
+    font-size: 18px;
+    padding-left: 20px;
+}
+.logoSearchContent i{
+    margin-left: 120px;
+    cursor: pointer;
 }
 
