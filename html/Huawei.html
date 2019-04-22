@@ -3,11 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Huawei</title>
-    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
-    <link rel="stylesheet" href="Huawei.css">
-    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
-    <script src="Huawei.js"></script>
-    <link rel="Shortcut Icon" href="img/img_ent_en_logo_ico.png"><title>华为 - 构建万物互联的智能世界</title>
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="../css/Huawei.css">
+    <link rel="Shortcut Icon" href="../img/img_ent_en_logo_ico.png"><title>华为 - 构建万物互联的智能世界</title>
 </head>
 <body>
 
@@ -20,6 +18,8 @@
         <span><a href="javascript:;" class="selectWhere"><i class="fa fa-dribbble"></i>&nbsp;&nbsp;<b>选择区域/语言</b>&nbsp;&nbsp;<i class="fa fa-angle-down"></i></a></span>
     </div>
 </div>
+
+<!--小黑条下滑内容-->
 <div class="huaweiWebsite-hide">
     <ul>
         <li>
@@ -74,10 +74,10 @@
 <!--导航栏-->
 <div class="huaweiLogo">
     <div class="logo">
-        <img class="logoPicture" src="img/huawei_logo.png" alt="huawei_logo">
+        <img class="logoPicture" src="../img/huawei_logo.png" alt="huawei_logo">
         <div class="logoCenterRight">
             <div class="logoLeft">
-                <img src="img/iPhone.png" class="iphonePicture" alt="iphone">
+                <img src="../img/iPhone.png" class="iphonePicture" alt="iphone">
                 <ul>
                     <li class="logoLeftIphone">&nbsp;&nbsp;<a href="javascript:;">手机、笔记本&amp;平板...&nbsp;<i class="fa fa-angle-down"></i></a></li>
                     <li class="logoLeftServe"><i class="fa fa-navicon"></i>&nbsp;&nbsp;<a href="javascript:;">解决方案&服务&nbsp;<i class="fa fa-angle-down"></i></a></li>
@@ -93,10 +93,21 @@
         </div>
     </div>
 </div>
+
+<!--导航条搜索切换-->
+<div class="logoHideSearch">
+    <div class="logoSearchContent">
+        <img src="../img/huawei_logo.png" alt="huawei_logo">
+        <input type="search" placeholder="搜索">
+        <i class="fa fa-times fa-3x searchChange"></i>
+    </div>
+</div>
+
+<!--导航栏鼠标触碰 手机，笔记本 展现内容-->
 <div class="logoLeft-hide">
     <div class="logoLeft-hideHide">
         <div class="logoLeft-hidePicture">
-            <img src="img/nav_p30pro_cn.jpg" alt="nav_p30pro_cn">
+            <img src="../img/nav_p30pro_cn.jpg" alt="nav_p30pro_cn">
             <button class="knowMore"><span style="margin-right: 25px;">了解更多</span><i class="fa fa-angle-right"></i></button>
         </div>
         <div class="hide-tuBiao">
@@ -123,6 +134,8 @@
         </div>
     </div>
 </div>
+
+<!--导航栏鼠标触碰 解决方案&服务 展现内容-->
 <div class="logoLeft-hideServe">
     <div class="logoLeft-serve">
         <div class="hideServe-logo">
@@ -133,7 +146,6 @@
             </ul>
         </div>
         <div class="hideString"></div>
-
 
         <div class="hideServe-content1">
             <div class="content1-left">
@@ -148,18 +160,19 @@
             </div>
             <div class="hideContent-content">
                 <ul class="contentLeft">
-                    <li><h3>产品</h3></li>
-                    <li>弹性云服务器</li>
-                    <li>关系型数据库</li>
-                    <li>软件开发云</li>
+                    <li><h3>解决方案</h3></li>
+                    <li>云数据中心</li>
+                    <li>企业网络</li>
+                    <li>智能计算</li>
+                    <li>各行业解决方案</li>
                     <li><a href="javascript:;">查看全部</a></li>
                 </ul>
                 <ul class="contentRight">
-                    <li><h3>解决方案</h3></li>
-                    <li>电商行业企业自建解决方案</li>
-                    <li>游戏行业解决方案</li>
-                    <li>高性能计算解决方案</li>
-                    <li>SAP解决方案</li>
+                    <li><h3>服务</h3></li>
+                    <li>培训与认证</li>
+                    <li>行业云使能服务</li>
+                    <li>提升服务</li>
+                    <li>客户支持服务</li>
                     <li><a href="javascript:;">查看全部</a></li>
                 </ul>
                 <div class="contentBottom">
@@ -177,26 +190,33 @@
                 <p><a href="javascript:;">前往<span>技术支持中心</span></a></p>
             </div>
         </div>
-        <!--<div class="hideServe-content2">
-            <div class="hideContent-img">
-                <img src="img/nav-contact_02.png" alt="nav-contact"><br>
-                <span class="imgSpan1">华为云</span><br>
-                <span class="imgSpan2">+智能，见未来></span>
+
+        <div class="hideServe-content2">
+            <div class="content1-left">
+                <ul class="content1-leftUl">
+                    <li>产品</li>
+                    <li>无线网络</li>
+                    <li>固定网络</li>
+                    <li>云核心网</li>
+                    <li>电信软件</li>
+                    <li><span>查看全部</span></li>
+                </ul>
             </div>
             <div class="hideContent-content">
                 <ul class="contentLeft">
-                    <li><h3>产品</h3></li>
-                    <li>弹性云服务器</li>
-                    <li>关系型数据库</li>
-                    <li>软件开发云</li>
+                    <li><h3>解决方案</h3></li>
+                    <li>业务云化</li>
+                    <li>设备云化</li>
+                    <li>网络云化</li>
+                    <li>最大化网络价值</li>
                     <li><a href="javascript:;">查看全部</a></li>
                 </ul>
                 <ul class="contentRight">
-                    <li><h3>解决方案</h3></li>
-                    <li>电商行业企业自建解决方案</li>
-                    <li>游戏行业解决方案</li>
-                    <li>高性能计算解决方案</li>
-                    <li>SAP解决方案</li>
+                    <li><h3>服务</h3></li>
+                    <li>咨询服务</li>
+                    <li>系统集成服务</li>
+                    <li>管理服务</li>
+                    <li>培训服务</li>
                     <li><a href="javascript:;">查看全部</a></li>
                 </ul>
                 <div class="contentBottom">
@@ -207,18 +227,17 @@
                 <ul>
                     <li><h4>需要技术支持？</h4></li>
                     <li>产品支持</li>
-                    <li>软件下载</li>
-                    <li>技术论坛</li>
-                    <li>工具</li>
+                    <li>Group Space</li>
+                    <li>公告</li>
+                    <li>华为资料直通车</li>
                 </ul>
                 <p><a href="javascript:;">前往<span>技术支持中心</span></a></p>
             </div>
         </div>
 
-
         <div class="hideServe-content3">
             <div class="hideContent-img">
-                <img src="img/nav-contact_02.png" alt="nav-contact"><br>
+                <img src="../img/nav-contact_02.png" alt="nav-contact"><br>
                 <span class="imgSpan1">华为云</span><br>
                 <span class="imgSpan2">+智能，见未来></span>
             </div>
@@ -245,25 +264,57 @@
             <div class="hideContent-help">
                 <ul>
                     <li><h4>需要技术支持？</h4></li>
-                    <li>产品支持</li>
-                    <li>软件下载</li>
-                    <li>技术论坛</li>
-                    <li>工具</li>
+                    <li>服务保障体系</li>
+                    <li>华为云社区</li>
                 </ul>
-                <p><a href="javascript:;">前往<span>技术支持中心</span></a></p>
+                <p><a href="javascript:;">前往<span>帮助中心</span></a></p>
             </div>
         </div>
-    </div>-->
-</div>
-
-<!--导航条搜索切换-->
-<div class="logoHideSearch">
-    <div class="logoSearchContent">
-        <img src="img/huawei_logo.png" alt="huawei_logo">
-        <input type="search" placeholder="搜索">
-        <i class="fa fa-times fa-3x searchChange"></i>
     </div>
 </div>
 
+<!--轮播图-->
+<div class="imgBanner">
+    <ul class="imgTransparent">
+        <li><img class="imgChange" src="../img/hbanner_p30pro_cn_v3.jpg" alt="hbanner_p30pro_cn_v3"></li>
+        <li><img class="imgChange" src="../img/hbanner-hwsafer-bg.jpg">
+            <img class="imgTransparent1" src="../img/hbanner-hwsafer-text-cn.png">
+        </li>
+        <li><img class="imgChange" src="../img/Hbanner-annualreport-bg.jpg" alt="Hbanner-annualreport-bg">
+            <img class="imgTransparent2" src="../img/hbanner-has2019-text-cn.png">
+        </li>
+    </ul>
+    <ul class="num"></ul>
+    <div class="btn btn_l"><i class="fa fa-angle-left"></i></div>
+    <div class="btn btn_r"><i class="fa fa-angle-right"></i></div>
+</div>
+
+<!--未来影像-->
+<div class="futureMovie">
+    <div class="movieLeft">
+        <div class="movieLeftContent">
+            <img src="../img/p30_logo_cn.png" alt="p30_logo_cn">
+            <p><a class="movieWordOne" href="javascript:;">未来影像</a></p>
+            <p><a class="movieWordTwo" href="javascript:;">了解更多</a>
+                <i class="fa fa-long-arrow-right knowMoreArrow"></i></p>
+            <p><a class="movieWordThree" href="javascript:;">*图片仅供参考，请以实物为准</a></p>
+        </div>
+    </div>
+    <div class="movieRight">
+        <div class="movieRightTop">
+            <img src="../img/mate20-plz-cn-452.jpg" alt="mate20-plz-cn-452"><br>
+            <p><a class="movieWordFour" href="javascript:;">产品</a></p>
+            <p><a class="movieWordFive" href="javascript:;"><b>HUAWEI Mate20系列</b></a></p>
+            <p><a class="movieWordSix" href="javascript:;">智慧新高度</a></p>
+            <br><br>
+            <p><a class="movieWordSeven" href="javascript:;">立即购买</a>
+                <i class="fa fa-long-arrow-right knowMoreArrow2"></i></p>
+        </div>
+    </div>
+</div>
+
+
+<script src="../jQuery/jquery.min.js"></script>
+<script src="../jQuery/Huawei.js"></script>
 </body>
 </html>
