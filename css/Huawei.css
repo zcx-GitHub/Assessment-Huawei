@@ -504,31 +504,84 @@
     margin-bottom: 330px;
 }
 
+/*用户(轮播图上下方)*/
+.bannerUser{
+    width: 78%;
+    height: 160px;
+    background-color: white;
+    box-shadow: 0 3px 10px #E8E8E8;
+    position: relative;
+    z-index: 99;
+    border-radius: 5px;
+    margin: -80px auto;
+    overflow: hidden;
+}
+.bannerUserLeft{
+    width: 33%;
+    height: 160px;
+    float: left;
+}
+.bannerUserContent{
+    width: 80%;
+    height: 100px;
+    margin: 30px auto;
+    overflow: hidden;
+}
+.bannerUser img{
+    float: left;
+    width: 25%;
+    height: 90px;
+}
+.userContent{
+    float: left;
+    width: 65%;
+    margin-left: 8%;
+    line-height: 30px;
+}
+.bannerUserString{
+    width: 1px;
+    height: 120px;
+    float: left;
+    margin-top: 20px;
+    background-color: #aaaaaa;
+}
+.bannerUserCenter{
+    width: 32%;
+    height: 160px;
+    float: left;
+}
+.bannerUserRight{
+    width: 33%;
+    height: 160px;
+    float: left;
+}
+
 /*未来影像*/
 .futureMovie{
-    width: 1100px;
-    height: 500px;
+    width: 88%;
+    height: 590px;
     margin-top: 150px;
-    margin-left: 30px;
+    margin-left: 2%;
     overflow: hidden;
 }
 .movieLeft{
     float: left;
-    width: 550px;
+    width: 50%;
     height: 400px;
-    border-radius: 7px;
+    border-radius: 3px;
     cursor: pointer;
     background-color: #2CB8E1;
 }
 .movieLeftContent{
-    width: 280px;
+    width: 40%;
     height: 300px;
     margin-top: 90px;
-    margin-left: 90px;
+    margin-left: 26%;
+    float: left;
 }
-.movieLeftContent img{
-    width: 280px;
-    height: 60px;
+.movieLogo{
+    width: 100%;
+    height: 40px;
 }
 .movieLeftContent p{
     line-height: 80px;
@@ -548,29 +601,45 @@
     color: white;
     margin-left: 10px;
 }
+.movieLeftPicture{
+    float: left;
+    height: 500px;
+    position: absolute;
+    margin-left: 30%;
+}
+.moviePhone{
+    width: 240px;
+    height: 500px;
+    margin-left: 10px;
+    margin-top: 50px;
+}
+.moviePictureShadow {
+    width: 200px;
+    height: 80px;
+    margin-left: 40px;
+    margin-top: -35px;
+}
 .movieWordThree{
     font-size: 5px;
 }
 .movieRight{
     float: left;
-    width: 400px;
-    height: 500px;
-    margin-left: 150px;
+    width: 36%;
+    height: 590px;
+    margin-left: 14%;
     border-radius: 7px;
-   background-color: #d4e3e6;
+    background-color: #d4e3e6;
     cursor: pointer;
 }
-.movieRightTop{
-    width: 400px;
-}
+
 .movieRightTop img{
-    width: 400px;
+    width: 100%;
     border-radius: 7px 7px 0 0;
 }
 .movieRightTop p{
     margin-top: 10px;
     line-height: 45px;
-    margin-left: 50px;
+    margin-left: 15%;
 }
 .movieRightTop a{
     text-decoration: none;
@@ -589,4 +658,367 @@
 .knowMoreArrow2{
     font-size: 25px;
     margin-left: 10px;
+}
+
+/*前所未见*/
+.neverSee{
+    width: 100%;
+    height: 480px;
+    margin-top: 100px;
+}
+.neverSeePicture{
+    z-index: -1;
+    position: relative;
+}
+.neverSeeWord{
+    position: absolute;
+    z-index: 1;
+    margin-left: 60%;
+    margin-top: -480px;
+}
+.neverSeeKnowMore{
+    color: black;
+    font-size: 23px;
+    position: absolute;
+    margin-top: -230px;
+    margin-left: 68%;
+    cursor: pointer;
+}
+.neverSeeArrow{
+    font-size: 25px;
+    margin-left: 15px;
+}
+@media screen and (max-width: 1200px){
+    .neverSee{
+        display: none;
+    }
+}
+
+/*展会活动*/
+.activity{
+    width: 90%;
+    height: 500px;
+    margin: 200px auto;
+}
+.activityLogo{
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+}
+.activityLogoLeft{
+    font-size: 38px;
+}
+.activityLogoRight{
+    margin-left: 70%;
+    font-size: 23px;
+}
+.activityLogoArrow{
+    margin-left: 20px;
+}
+
+/*展会活动轮播图*/
+.activityBanner {
+    width: 1100px;
+    height: 640px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+}
+.activityBannerChange{
+    width: 11000px;
+    height: 640px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.activityLiLeft{
+    width: 1100px;
+    height: 560px;
+    overflow: hidden;
+}
+.activityBannerChange li{
+    float: left;
+}
+.activityNum {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+}
+.activityNum li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid rgba(53, 53, 53, 0.84);
+    display: inline-block;
+    margin: 0 10px;
+    cursor: pointer;
+}
+.activityNum li.on {
+    background-color: black;
+}
+.activityBtn {
+    width: 30px;
+    height: 50px;
+    opacity: 0.5;
+    filter: alpha(opacity:0.5);
+    position: absolute;
+    top: 47%;
+    margin-top: -25px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 50px;
+    font-size: 50px;
+    font-weight: bolder;
+    color: orangered;
+    display: none;
+}
+.activityBtn_l {
+    left: 10px;
+}
+.activityBtn_r {
+    right: 10px;
+}
+.activityBanner:hover .activityBtn {
+    display: block;
+}
+
+.activityLiLeftContent{
+    width: 600px;
+    height: 480px;
+    margin-top: 100px;
+    background-color: #DCE6EE;
+    border-radius: 5px 0 0 5px;
+    float: left;
+}
+.activityWord{
+    width: 400px;
+    height: 300px;
+    margin: 60px auto;
+
+}
+.activityWordStyle{
+    font-size: 13px;
+    color: #aaaaaa;
+}
+.activityWord b{
+    font-size: 27px;
+}
+.activityWord p{
+    line-height: 30px;
+    font-size: 17px;
+}
+.activityKnowMore{
+    font-size: 22px;
+}
+.activityKnowMore i{
+    margin-left: 15px;
+    font-size: 25px;
+}
+.activityPicture{
+    margin-left: 600px;
+    width: 500px;
+    height: 560px;
+    margin-top: 50px;
+    border-radius: 7px;
+}
+.activityPicture img {
+    border-radius: 7px;
+}
+.activityEllipsis{
+    max-width: 400px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+   /*文字超出一行，省略超出部分，显示’…’
+    white-space: nowrap;*/
+
+    /*文字超出多行，省略超出部分，显示’…’ */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+}
+
+/*成功故事*/
+.successStory{
+    width: 90%;
+    height: 530px;
+    margin: auto;
+}
+.successStoryLogo{
+    width: 100%;
+    height: 48px;
+    overflow: hidden;
+}
+.successStoryLogoLeft{
+    float: left;
+    font-size: 37px;
+}
+.successStoryLogoRight{
+    float: left;
+    font-size: 23px;
+    margin-left: 70%;
+    margin-top: 9px;
+}
+.successStoryLogoRight i{
+    margin-left: 10px;
+}
+.successStoryPicture{
+    width: 100%;
+    height: 430px;
+    margin-top: 65px;
+    overflow: hidden;
+}
+.successStoryPictureContent{
+    width: 27%;
+    height: 500px;
+    background-color: #DDE6ED;
+    float: left;
+    margin: 0 3%;
+    border-radius: 7px 7px 0 0;
+}
+.successStoryPictureContent img{
+    width: 100%;
+    border-radius: 7px 7px 0 0;
+}
+.storyPictureWord{
+    width: 70%;
+    height: 180px;
+    margin: 50px auto;
+}
+.storyPictureWord b{
+    font-size: 21px;
+}
+.story{
+    font-size: 14px;
+    color: #8d8d8d;
+}
+.successMore{
+    font-size: 23px;
+}
+.knowMoreArrow4{
+    margin-left: 10px;
+}
+.knowMoreArrow5{
+    margin-left: 10px;
+}
+.knowMoreArrow6{
+    margin-left: 10px;
+}
+
+/*近期新闻*/
+.news{
+    width: 90%;
+    margin-top: 120px;
+    margin-left: 5%;
+    height: 590px;
+}
+.newsLogo{
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+}
+.newsLogo b{
+    font-size: 38px;
+    float: left;
+}
+.newsLogoRight{
+    font-size: 23px;
+    float: left;
+    margin-left: 73%;
+    margin-top: 8px;
+}
+.newsLogo i{
+    font-size: 25px;
+    margin-left: 10px;
+}
+.newsContent{
+    width: 100%;
+    height: 480px;
+    margin-top: 60px;
+    overflow: hidden;
+}
+.newsContentLeft{
+    float: left;
+    width: 35%;
+    height: 480px;
+    margin-left: 5%;
+    background-color: #DDE6ED;
+}
+.newsContentLeft img{
+    width: 100%;
+    height: 240px;
+}
+.newsContentLeftPicture{
+    width: 78%;
+    height: 200px;
+    margin: 25px auto;
+}
+.newsWord{
+    font-size: 14px;
+    color: #717171;
+}
+.newsContentLeftPicture b{
+    font-size: 22px;
+}
+.newsContentLeftPicture span{
+    line-height: 30px;
+}
+.newsMore{
+    font-size: 23px;
+}
+.newsMore i{
+    margin-left: 10px;
+}
+.newsContentRight{
+    float: left;
+    width: 40%;
+    height: 350px;
+    margin-left: 13%;
+}
+.newsRightWord{
+    font-size: 14px;
+    color: #717171;
+}
+.newsRightWord2{
+    font-size: 18px;
+}
+.newsRightWord2 a{
+    text-decoration: none;
+    color: black;
+}
+.newsContentRight span{
+    line-height: 25px;
+}
+
+/*结尾*/
+.foot{
+    width: 100%;
+    height: 900px;
+    background-color: #F0F0F0;
+    margin-top: 100px;
+}
+.about{
+    width: 78%;
+    height: 300px;
+    display: inline-block;
+    margin-top: 70px;
+    margin-left: 6%;
+    background-color: pink;
+    overflow: hidden;
+}
+.entranceWebsite{
+    width: 78%;
+    height: 100px;
+    background-color: #00BFFF;
+    margin-top: 40px;
+    margin-left: 6%;
+}
+.aboutBranchLi{
+    float: left;
+    width: 18%;
+    height: 300px;
+    background-color: #cceeaa;
+    margin: 0 3%;
 }
