@@ -107,6 +107,7 @@
     width: 86%;
     margin: 0 auto;
     overflow: hidden;
+    background-color: #cceeaa;
 }
 .logoPicture{
     width: 140px;
@@ -118,6 +119,7 @@
     height: 80px;
     margin: auto;
     overflow: hidden;
+    background-color: pink;
 }
 .logoLeft{
     float: left;
@@ -126,6 +128,7 @@
     font-size: 18px;
     display: inline-block;
     overflow: hidden;
+    background-color: palevioletred;
 }
 .iphonePicture{
     float: left;
@@ -141,6 +144,7 @@
     display: inline-block;
     margin-right: 25px;
     margin-top: 30px;
+    background-color: #00BFFF;
 }
 .logoLeft a{
     text-decoration: none;
@@ -163,9 +167,10 @@
     text-decoration: none;
     color: black;
     font-size: 18px;
+    background-color: #00BFFF;
 }
 .logoSearch{
-    float: right;
+    float: left;
     width: 8%;
     height: 80px;
     font-size: 30px;
@@ -995,30 +1000,180 @@
 /*结尾*/
 .foot{
     width: 100%;
-    height: 900px;
+    height: 750px;
     background-color: #F0F0F0;
     margin-top: 100px;
-}
-.about{
-    width: 78%;
-    height: 300px;
-    display: inline-block;
-    margin-top: 70px;
-    margin-left: 6%;
-    background-color: pink;
     overflow: hidden;
 }
+.about{
+    width: 85%;
+    height: 320px;
+    display: inline-block;
+    margin-top: 70px;
+    margin-left: 0;
+    overflow: hidden;
+    float: left;
+}
 .entranceWebsite{
-    width: 78%;
-    height: 100px;
-    background-color: #00BFFF;
+    width: 85%;
+    height: 120px;
     margin-top: 40px;
-    margin-left: 6%;
+    margin-left: 0;
+    overflow: hidden;
+}
+.otherWay{
+    width: 4%;
+    height: 200px;
+    margin-top: 70px;
+    float: left;
+}
+.otherWay i{
+    font-size: 25px;
+    line-height: 40px;
+    margin-left: 25%;
 }
 .aboutBranchLi{
     float: left;
-    width: 18%;
-    height: 300px;
-    background-color: #cceeaa;
-    margin: 0 3%;
+    width: 15%;
+    height: 280px;
+    margin-left: 10%;
+}
+.aboutArrow{
+    margin-left: 10px;
+}
+.aboutBranchLi p{
+    margin-top: 13px;
+}
+.aboutBranchLi a{
+    text-decoration: none;
+    color: black;
+}
+.aboutBranchLi a:hover{
+    text-decoration:underline;
+}
+.entranceWebsiteLogo{
+    width: 97%;
+    height: 40px;
+    margin-left: 10%;
+}
+.aboutBranchWebsite{
+    float: left;
+    width: 15%;
+    height: 40px;
+    margin-left: 10%;
+}
+.aboutBranchWebsite p{
+    margin-top: 13px;
+}
+.aboutBranchWebsite p a{
+    text-decoration: none;
+    color: black;
+}
+.aboutBranchWebsite p a:hover{
+    text-decoration: underline;
+}
+.aboutBranchWebsite i{
+    font-size: 18px;
+    margin-left: 10px;
+}
+.footBlack{
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    overflow: hidden;
+}
+.company{
+    float: left;
+    color: white;;
+    font-size: 14px;
+    margin-left: 8%;
+    margin-top: 10px;
+}
+.contact{
+    float: left;
+    color: white;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-left: 45%;
+}
+@media screen and (max-width: 990px){
+    .foot{
+        height: 1110px;
+    }
+    .about{
+        width: 100%;
+        height: 650px;
+        margin-top: 120px;
+    }
+    .aboutBranchLi{
+        float: none;
+        width: 100%;
+        height: 160px;
+        margin-left: 1%;
+        margin-top: 10px;
+    }
+    .aboutBranchLi1{
+        height: 180px;
+    }
+    .aboutBranchLi2{
+        height: 150px;
+    }
+    .aboutBranchLi3{
+        height: 120px;
+    }
+    .aboutBranchLi4{
+        height: 120px;
+    }
+    .aboutBranchLogo{
+        margin-left: 0;
+    }
+    .aboutBranchLi p{
+        float: left;
+        width: 50%;
+    }
+    .otherWay{
+         width: 100%;
+         height: 40px;
+         margin-left: 0;
+         margin-top: -720px;
+     }
+    .otherWay i{
+        margin-left: 25px;
+        float: left;
+        font-size: 28px;
+    }
+    .entranceWebsite{
+        width: 100%;
+        margin-left: 1%;
+    }
+    .entranceWebsiteLogo{
+        margin-left: 0;
+    }
+    .aboutBranchWebsite{
+        width: 25%;
+        margin-left: 0;
+    }
+    .company{
+        width: 80%;
+        text-align: center;
+        color: black;
+    }
+    .contact{
+        display: none;
+    }
+    .footBlack{
+        background-color: #F0F0F0;
+    }
+}
+@media screen and (max-width: 768px){
+    .foot{
+        height: 1200px;
+    }
+    .entranceWebsite{
+        height: 160px;
+    }
+    .aboutBranchWebsite{
+        width: 50%;
+        height: 40px;
+    }
 }
