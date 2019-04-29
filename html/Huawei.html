@@ -42,7 +42,7 @@
     </ul>
 </div>
 <div class="selectWhere-hide">
-    <div class="HuaweiGlobalEnglish"><span><i class="fa fa-dribbble">&nbsp;&nbsp;Huawei Global</i></span> - <a href="javascript:;">English</a></div>
+    <div class="huaweiGlobalEnglish"><span><i class="fa fa-dribbble">&nbsp;&nbsp;Huawei Global</i></span> - <a href="javascript:;">English</a></div>
     <ul>
         <li><span>Australia</span> - <a href="#">English</a></li>
         <li><span>Belarus</span> - <a href="#">Pусский</a></li>
@@ -80,7 +80,7 @@
             <div class="logoLeft">
                 <img src="../img/iPhone.png" class="iphonePicture" alt="iphone">
                 <ul>
-                    <li class="logoLeftIphone">&nbsp;&nbsp;<a href="javascript:;">手机、笔记本&amp;平板...&nbsp;<i class="fa fa-angle-down"></i></a></li>
+                    <li class="logoLeftIphone"><a href="javascript:;">手机、笔记本&amp;平板...&nbsp;<i class="fa fa-angle-down"></i></a></li>
                     <li class="logoLeftServe"><i class="fa fa-navicon"></i>&nbsp;&nbsp;<a href="javascript:;">解决方案&服务&nbsp;<i class="fa fa-angle-down"></i></a></li>
                 </ul>
             </div>
@@ -90,7 +90,10 @@
                     <li><a href="javascript:;">华为云&nbsp;<i class="fa fa-external-link"></i></a></li>
                 </ul>
             </div>
-            <div class="logoSearch"><i class="fa fa-search logoSearchSearch"></i></div>
+            <div class="logoSearch">
+                <i class="fa fa-navicon logoSearchHide"></i>
+                <i class="fa fa-search logoSearchSearch"></i>
+            </div>
         </div>
     </div>
 </div>
@@ -98,9 +101,9 @@
 <!--导航条搜索切换-->
 <div class="logoHideSearch">
     <div class="logoSearchContent">
-        <img src="../img/huawei_logo.png" alt="huawei_logo">
-        <input type="search" placeholder="搜索">
-        <i class="fa fa-times fa-3x searchChange"></i>
+        <img class="logoHidePicture" src="../img/huawei_logo.png" alt="huawei_logo">
+        <input class="logoHideInput" type="search" placeholder="搜索">
+        <i class="fa fa-times fa-2x searchChange"></i>
     </div>
 </div>
 
@@ -278,11 +281,11 @@
 <div class="imgBanner">
     <ul class="imgTransparent">
         <li><img class="imgChange" src="../img/hbanner_p30pro_cn_v3.jpg" alt="hbanner_p30pro_cn_v3"></li>
-        <li><img class="imgChange" src="../img/hbanner-hwsafer-bg.jpg">
-            <img class="imgTransparent1" src="../img/hbanner-hwsafer-text-cn.png">
+        <li><img class="imgChange" src="../img/hbanner-hwsafer-bg.jpg" alt="">
+            <img class="imgTransparent1" src="../img/hbanner-hwsafer-text-cn.png" alt="">
         </li>
         <li><img class="imgChange" src="../img/Hbanner-annualreport-bg.jpg" alt="Hbanner-annualreport-bg">
-            <img class="imgTransparent2" src="../img/hbanner-has2019-text-cn.png">
+            <img class="imgTransparent2" src="../img/hbanner-has2019-text-cn.png" alt="">
         </li>
     </ul>
     <ul class="num"></ul>
@@ -294,7 +297,7 @@
 <div class="bannerUser">
     <div class="bannerUserLeft">
         <div class="bannerUserContent">
-            <img src="../img/bucket_p30_cn.png">
+            <img src="../img/bucket_p30_cn.png" alt="">
             <div class="userContent">
                 <h3>个人用户</h3>
                 <p>手机，笔记本和平板等个人及家用产品</p>
@@ -304,7 +307,7 @@
     <div class="bannerUserString"></div>
     <div class="bannerUserCenter">
         <div class="bannerUserContent">
-            <img src="../img/banner-nav-img02.png">
+            <img src="../img/banner-nav-img02.png" alt="">
             <div class="userContent">
                 <h3>企业用户</h3>
                 <p>企业商用产品，解决方案及云服务</p>
@@ -314,13 +317,24 @@
     <div class="bannerUserString"></div>
     <div class="bannerUserRight">
         <div class="bannerUserContent">
-            <img src="../img/banner-nav-img03.png">
+            <img src="../img/banner-nav-img03.png" alt="">
             <div class="userContent">
                 <h3>运营商用户</h3>
                 <p>运营商网络解决方案，产品及服务</p>
             </div>
         </div>
     </div>
+</div>
+
+<!--轮播图上下方自适应-->
+<div class="bannerAdaption">
+    <ul>
+        <li class="bannerLi bannerLi1"><span><b><br>个人用户</b></span><i class="fa fa-external-link"></i></li>
+        <li class="bannerString"></li>
+        <li class="bannerLi bannerLi2"><span><b><br>企业用户</b></span><i class="fa fa-external-link"></i></li>
+        <li class="bannerString"></li>
+        <li class="bannerLi bannerLi3"><span><b><br>运营商用户</b></span><i class="fa fa-external-link"></i></li>
+    </ul>
 </div>
 
 <!--未来影像-->
@@ -353,8 +367,8 @@
 
 <!--前所未见-->
 <div class="neverSee">
-    <img class="neverSeePicture" src="../img/home_banner_matex_pc_cn%20.jpg">
-    <img class="neverSeeWord" src="../img/home_banner_matex_text_cn.png">
+    <img class="neverSeePicture" src="../img/home_banner_matex_pc_cn%20.jpg" alt="">
+    <img class="neverSeeWord" src="../img/home_banner_matex_text_cn.png" alt="">
     <span class="neverSeeKnowMore">了解更多<i class="fa fa-long-arrow-right neverSeeArrow"></i></span>
 </div>
 
@@ -416,30 +430,30 @@
 <div class="successStory">
     <div class="successStoryLogo">
         <span class="successStoryLogoLeft"><b>成功故事</b></span>
-        <span class="successStoryLogoRight">查看全部<i class="fa fa-angle-right"></i></span>
+        <span class="successStoryLogoRight">查看全部<i class="fa fa-angle-right successLogoI"></i></span>
     </div>
     <div class="successStoryPicture">
-        <div class="successStoryPictureContent">
+        <div class="successStoryPictureContent content1">
             <img class="successPicture1" src="../img/yunnan-video-crbt.jpg" alt="">
             <div class="storyPictureWord">
                 <span class="story">商业故事</span><br>
-                <b>变“听彩铃”为“看彩铃”： 视频彩铃何以成云南最重要名片？</b><br><br><br>
+                <b>变"听彩铃"为"看彩铃"： 视频彩铃何以成云南最重要名片？</b><br><br class="successBr"><br class="successBr">
                 <span class="successMore successMore1">更多<i class="fa fa-long-arrow-right knowMoreArrow4"></i></span>
             </div>
         </div>
-        <div class="successStoryPictureContent">
+        <div class="successStoryPictureContent content2">
             <img class="successPicture2" src="../img/rustenburg-smart-city.jpg" alt="">
             <div class="storyPictureWord">
                 <span class="story">商业故事</span><br>
-                <b>铂金之都南非勒斯滕堡开采智慧城市金矿</b><br><br><br><br>
+                <b>铂金之都南非勒斯滕堡开采智慧城市金矿</b><br><br><br class="successBr"><br class="successBr">
                 <span class="successMore successMore2">更多<i class="fa fa-long-arrow-right knowMoreArrow5"></i></span>
             </div>
         </div>
-        <div class="successStoryPictureContent">
-            <img class="successPicture2" src="../img/3uk-314.jpg" alt="">
+        <div class="successStoryPictureContent content2 content3">
+            <img class="successPicture2 successPicture3" src="../img/3uk-314.jpg" alt="">
             <div class="storyPictureWord">
                 <span class="story">商业故事</span><br>
-                <b>Three UK：5G提升网络容量，创造酷炫应用</b><br><br><br><br>
+                <b>Three UK：5G提升网络容量，创造酷炫应用</b><br><br><br class="successBr"><br class="successBr">
                 <span class="successMore successMore3">更多<i class="fa fa-long-arrow-right knowMoreArrow6"></i></span>
             </div>
         </div>
@@ -450,7 +464,7 @@
 <div class="news">
     <div class="newsLogo">
         <b>近期新闻</b>
-        <span class="newsLogoRight">查看全部<i class="fa fa-angle-right"></i></span>
+        <span class="newsLogoRight">查看全部<i class="fa fa-angle-right aass"></i></span>
     </div>
     <div class="newsContent">
         <div class="newsContentLeft">
@@ -458,7 +472,12 @@
             <div class="newsContentLeftPicture">
                 <span class="newsWord">新闻 | 2019年04月16日</span><br>
                 <span><b>华为：持续创新，构建万物互联的智能世界</b></span>
-                <br><br><br><br>
+                <a class="newsContentHide">华为公司第十六届全球分析师大会16日在深圳开幕。
+                    本届大会主题为&ldquo;构建万物互联的智能世界&rdquo;，
+                    华为与来自全球的680多名行业分析师、金融分析师、通讯、互联网、
+                    金融等行业意见领袖及媒体一起，共同探讨了如何以持续创新构建万物互联的智能世界。
+                </a>
+                <br><br><br><br><br>
                 <span class="newsMore">更多<i class="fa fa-long-arrow-right"></i></span>
             </div>
         </div>

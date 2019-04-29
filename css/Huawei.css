@@ -76,7 +76,7 @@
     display: none;
     font-size: 14px;
 }
-.HuaweiGlobalEnglish{
+.huaweiGlobalEnglish{
     margin-left: 6%;;
     margin-top: 32px;
 }
@@ -98,7 +98,7 @@
 /*导航栏*/
 .huaweiLogo{
     width: 100%;
-    height: 80px;
+    height: 68px;
     box-shadow: 0 3px 3px #aaaaaa;
     z-index: 1;
     position: relative;
@@ -107,44 +107,40 @@
     width: 86%;
     margin: 0 auto;
     overflow: hidden;
-    background-color: #cceeaa;
 }
 .logoPicture{
-    width: 140px;
-    margin-top: 25px;
+    width: 120px;
+    height: 27px;
+    margin-top: 20px;
     float: left;
 }
 .logoCenterRight{
     width: 80%;
-    height: 80px;
-    margin: auto;
+    height: 68px;
+    margin-left: 4%;
+    float: left;
     overflow: hidden;
-    background-color: pink;
 }
 .logoLeft{
     float: left;
     width: 55%;
-    height: 80px;
-    font-size: 18px;
+    height: 68px;
     display: inline-block;
     overflow: hidden;
-    background-color: palevioletred;
 }
 .iphonePicture{
     float: left;
-    width: 40px;
-    height: 50px;
-    margin-top: 13px;
+    width: 9%;
+    height: 46px;
+    margin-top: 9px;
 }
 .logoLeft ul{
     list-style: none;
-    height: 80px;
 }
 .logoLeft ul li{
     display: inline-block;
-    margin-right: 25px;
-    margin-top: 30px;
-    background-color: #00BFFF;
+    width: 43%;
+    margin-top: 25px;
 }
 .logoLeft a{
     text-decoration: none;
@@ -153,69 +149,119 @@
 .logoCenter{
     float: left;
     width: 37%;
-    height: 80px;
+    height: 68px;
 }
 .logoCenter ul{
     list-style: none;
 }
 .logoCenter ul li {
     display: inline-block;
-    margin-left: 40px;
-    margin-top: 30px;
+    width: 40%;
+    margin-top: 25px;
 }
 .logoCenter ul li a{
     text-decoration: none;
     color: black;
-    font-size: 18px;
-    background-color: #00BFFF;
 }
 .logoSearch{
     float: left;
     width: 8%;
-    height: 80px;
+    height: 68px;
     font-size: 30px;
 }
 .logoSearchSearch{
     margin-top: 20px;
-    margin-left: 20px;
     cursor: pointer;
 }
+.logoSearchHide{
+    display: none;
+}
 
+@media screen and (max-width: 1055px){
+    .logoCenterRight{
+        margin-left: 0;
+    }
+    .logoLeft{
+        width: 60%;
+    }
+    .logoCenter{
+        width: 33%;
+    }
+    .logoSearch{
+        width: 6%;
+    }
+
+}
+@media screen and (max-width: 968px) {
+    #website{
+        display: none;
+    }
+    .logoCenterRight{
+        width: 50%;
+        float: right;
+    }
+    .logoLeft{
+        display: none;
+    }
+    .logoCenter{
+        display: none;
+    }
+    .logoSearch{
+        float: right;
+        width: 40%;
+        overflow: hidden;
+    }
+    .logoSearchSearch{
+        display: block;
+        float: right;
+        margin-right: 15%;
+    }
+    .logoSearchHide{
+        display: block;
+        float: right;
+        margin-top: 20px;
+    }
+}
 
 /*导航条搜索切换*/
 .logoHideSearch{
-    width: 100%;
-    min-width: 900px;
-    display: none;
-    z-index: 2;
-    position: relative;
     box-shadow: 0 3px 3px #aaaaaa;
+    width: 100%;
+    display: none;
+    height: 68px;
+    z-index: 1;
+    position: relative;
 }
 .logoSearchContent{
     width: 86%;
-    height: 80px;
+    height: 68px;
     margin: 0 auto;
     overflow: hidden;
 }
-.logoSearchContent img{
-    width: 140px;
-    margin-top: 25px;
+.logoHidePicture{
+    width: 120px;
+    height: 27px;
+    margin-top: 20px;
+    float: left;
 }
-.logoSearchContent input{
+.logoHideInput{
+    float: left;
     width: 330px;
-    height: 45px;
-    border-radius: 7px;
+    height: 40px;
+    border-radius: 5px;
     border: 1px solid darkgray;
-    margin-left: 400px;
+    margin-left: 40%;
+    margin-top: 16px;
     outline: none;
-    font-size: 18px;
+    font-size: 15px;
     padding-left: 20px;
 }
-.logoSearchContent i{
-    margin-left: 120px;
+.searchChange{
+    float: left;
+    margin-left: 89%;
+    margin-top: -40px;
     cursor: pointer;
 }
-
 
 /*导航栏鼠标触碰 手机，笔记本 展现内容*/
 .logoLeft-hide{
@@ -561,12 +607,57 @@
     float: left;
 }
 
+/*轮播图上下方自适应*/
+.bannerAdaption{
+    width: 100%;
+    height: 180px;
+    background-color: white;
+    box-shadow: 0 3px 10px #E8E8E8;
+    position: relative;
+    z-index: 99;
+    border-radius: 5px;
+    margin: -80px auto;
+    overflow: hidden;
+    display: none;
+}
+.bannerAdaption ul{
+    list-style: none;
+}
+.bannerLi{
+    width: 94%;
+    height: 59px;
+    margin: 0 auto;
+    font-size: 16px;
+}
+.bannerLi i{
+    float: right;
+    color: black;
+}
+.bannerLi:hover{
+    color: red;
+}
+
+.bannerString{
+    width: 100%;
+    height: 1px;
+    background-color: black;
+}
+
+@media screen and (max-width: 768px){
+    .bannerUser{
+        display: none;
+    }
+    .bannerAdaption{
+        display: block;
+    }
+}
+
 /*未来影像*/
 .futureMovie{
-    width: 88%;
+    width: 90%;
     height: 590px;
     margin-top: 150px;
-    margin-left: 2%;
+    margin-left: 1%;
     overflow: hidden;
 }
 .movieLeft{
@@ -627,6 +718,22 @@
 .movieWordThree{
     font-size: 5px;
 }
+.movieLeft:hover .knowMoreArrow{
+    transform: translateX(10px);
+    transition: all 0.3s;
+}
+.movieLeft:hover .moviePhone{
+    transform: translateY(-20px);
+    transition: all 0.3s;
+}
+.movieLeft:hover .moviePictureShadow{
+    transform: translateY(20px);
+    transition: all 0.3s;
+}
+.movieRight:hover .knowMoreArrow2{
+    transform: translateX(10px);
+    transition: all 0.3s;
+}
 .movieRight{
     float: left;
     width: 36%;
@@ -664,6 +771,94 @@
     font-size: 25px;
     margin-left: 10px;
 }
+@media screen and (max-width: 1079px){
+    .futureMovie {
+        width: 96%;
+        margin-left: 0;
+    }
+    .movieLeft{
+        width: 60%;
+    }
+    .movieLeftContent{
+        margin-left: 20%;
+    }
+    .movieLeftPicture{
+        margin-left: 35%;
+    }
+    .movieRight{
+        margin-left: 3%;
+    }
+}
+@media screen and (max-width: 889px) {
+    .futureMovie{
+        height: 1050px;
+    }
+    .movieLeft{
+        width: 93%;
+    }
+    .movieLeftContent{
+        width: 30%;
+        margin-left: 40%;
+    }
+    .movieLeftPicture{
+        margin-left: 69%;
+    }
+    .movieRight{
+        width: 48%;
+        margin-top: 200px;
+        margin-left: 26%;
+    }
+    .movieLeft:hover .knowMoreArrow{
+        transform: none;
+    }
+    .movieLeft:hover .moviePhone{
+        transform: none;
+    }
+    .movieLeft:hover .moviePictureShadow{
+        transform: none;
+    }
+}
+@media screen and (max-width: 689px) {
+    .futureMovie{
+        margin-top: 240px;
+        width: 100%;
+    }
+    .movieLeft{
+        height: 500px;
+        width: 100%;
+    }
+    .movieLeftContent{
+        margin-left: 5%;
+        margin-top: 280px;
+        width: 35%;
+    }
+    .movieWordTwo{
+        display: none;
+    }
+    .knowMoreArrow{
+        display: none;
+    }
+    .movieLeftPicture{
+        margin-left: 40%;
+        margin-top: -150px;
+    }
+    .movieRight{
+        width: 100%;
+        margin-top: 50px;
+        margin-left: 0;
+        height: 500px;
+    }
+    .movieRightTop p{
+        text-align: center;
+        line-height: 35px;
+    }
+    .movieWordSeven{
+        display: none;
+    }
+    .knowMoreArrow2{
+        display: none;
+    }
+}
 
 /*前所未见*/
 .neverSee{
@@ -674,6 +869,7 @@
 .neverSeePicture{
     z-index: -1;
     position: relative;
+    width: 100%;
 }
 .neverSeeWord{
     position: absolute;
@@ -693,8 +889,33 @@
     font-size: 25px;
     margin-left: 15px;
 }
+.neverSeeKnowMore:hover .neverSeeArrow{
+    transform: translateX(20px);
+    transition: all 0.2s;
+}
 @media screen and (max-width: 1200px){
     .neverSee{
+        display: none;
+    }
+}
+@media screen and (max-width: 689px){
+    .neverSee{
+        display: block;
+        height: 300px;
+        width: 100%;
+        margin-top: 200px;
+    }
+    .neverSeePicture{
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+    }
+    .neverSeeWord{
+        margin-top: -570px;
+        margin-left: 6%;
+        width: 300px;
+    }
+    .neverSeeKnowMore{
         display: none;
     }
 }
@@ -719,6 +940,10 @@
 }
 .activityLogoArrow{
     margin-left: 20px;
+}
+.activityLogoRight:hover .activityLogoArrow{
+    transform: translateX(20px);
+    transition: all 0.2s;
 }
 
 /*展会活动轮播图*/
@@ -852,8 +1077,9 @@
     margin: auto;
 }
 .successStoryLogo{
-    width: 100%;
+    width: 96%;
     height: 48px;
+    margin: 0 auto;
     overflow: hidden;
 }
 .successStoryLogoLeft{
@@ -862,41 +1088,49 @@
 }
 .successStoryLogoRight{
     float: left;
-    font-size: 23px;
-    margin-left: 70%;
+    font-size: 22px;
+    margin-left: 73%;
     margin-top: 9px;
 }
 .successStoryLogoRight i{
     margin-left: 10px;
 }
+.successStoryLogoRight:hover .successLogoI{
+    transform: translateX(10px);
+    transition: all 0.2s;
+}
 .successStoryPicture{
-    width: 100%;
-    height: 430px;
+    width: 96%;
+    height: 400px;
+    margin-left: 2%;
     margin-top: 65px;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 .successStoryPictureContent{
-    width: 27%;
-    height: 500px;
+    width: 30%;
+    height: 400px;
     background-color: #DDE6ED;
     float: left;
-    margin: 0 3%;
     border-radius: 7px 7px 0 0;
+    cursor: pointer;
+}
+.content2{
+    margin-left: 5%;
 }
 .successStoryPictureContent img{
     width: 100%;
     border-radius: 7px 7px 0 0;
 }
 .storyPictureWord{
-    width: 70%;
+    width: 80%;
     height: 180px;
-    margin: 50px auto;
+    margin: 30px auto;
 }
 .storyPictureWord b{
-    font-size: 21px;
+    font-size: 20px;
 }
 .story{
-    font-size: 14px;
+    font-size: 13px;
     color: #8d8d8d;
 }
 .successMore{
@@ -911,17 +1145,125 @@
 .knowMoreArrow6{
     margin-left: 10px;
 }
+.content1:hover .successPicture1{
+    transform: translateX(-25px);
+}
+.content2:hover .successPicture2{
+    transform: translateX(-25px);
+}
+.content3:hover .successPicture3{
+    transform: translateX(-25px);
+}
+.content1:hover .knowMoreArrow4{
+     transform:translateX(10px);
+    transition: all 0.2s;
+}
+.content2:hover .knowMoreArrow5{
+    transform:translateX(10px);
+    transition: all 0.2s;
+}
+.content3:hover .knowMoreArrow6{
+    transform:translateX(10px);
+    transition: all 0.2s;
+}
+@media screen and (max-width: 889px){
+    .successStoryPicture{
+        margin-top: 40px;
+    }
+    .successStory{
+        width: 100%;
+        height: 413px;
+    }
+    .successStoryPicture{
+        height: 300px;
+    }
+    .successStoryPictureContent{
+        width: 31%;
+        height: 300px;
+    }
+    .storyPictureWord{
+        height: 130px;
+        width: 88%;
+        margin-top: 15px;
+    }
+    .storyPictureWord b{
+        line-height: 28px;
+    }
+    .content2{
+        margin-left: 3%;
+    }
+    .successBr{
+        display: none;
+    }
+    .content1:hover .successPicture1{
+        transform: none;
+    }
+    .content2:hover .successPicture2{
+        transform: none;
+    }
+    .content3:hover .successPicture3{
+        transform: none;
+    }
+    .content1:hover .knowMoreArrow4{
+        transform:none;
+    }
+    .content2:hover .knowMoreArrow5{
+        transform:none;
+    }
+    .content3:hover .knowMoreArrow6{
+        transform:none;
+    }
+}
+@media screen and (max-width: 689px){
+    .successStory{
+        height: 600px;
+    }
+    .successStoryPicture{
+        width: 94%;
+        margin-left: 3%;
+        height: 135px;
+    }
+    .successStoryPictureContent{
+        width: 100%;
+        height: 137px;
+        border-radius: 5px;
+
+    }
+    .content2{
+        margin-top: 40px;
+        margin-left: 0;
+    }
+    .successStoryPictureContent img{
+        width: 40%;
+        float: right;
+        height: 137px;
+        margin-right: 2%;
+    }
+    .storyPictureWord{
+        width: 96%;
+    }
+    .story{
+        font-size: 12px;
+    }
+    .storyPictureWord b{
+        font-size: 16px;
+    }
+    .successMore{
+        display: none;
+    }
+}
 
 /*近期新闻*/
 .news{
     width: 90%;
-    margin-top: 120px;
+    margin-top: 70px;
     margin-left: 5%;
     height: 590px;
 }
 .newsLogo{
-    width: 100%;
+    width: 95%;
     height: 50px;
+    margin: 0 auto;
     overflow: hidden;
 }
 .newsLogo b{
@@ -931,12 +1273,17 @@
 .newsLogoRight{
     font-size: 23px;
     float: left;
-    margin-left: 73%;
+    margin-left: 71%;
     margin-top: 8px;
+    cursor: pointer;
 }
 .newsLogo i{
     font-size: 25px;
     margin-left: 10px;
+}
+.newsLogoRight:hover .newsLogoRight i{
+    transform:translateX(10px);
+    transition: all 0.2s;
 }
 .newsContent{
     width: 100%;
@@ -946,26 +1293,36 @@
 }
 .newsContentLeft{
     float: left;
-    width: 35%;
+    width: 350px;
     height: 480px;
     margin-left: 5%;
     background-color: #DDE6ED;
+    border-radius: 7px 7px 7px 7px;
+    cursor: pointer;
+}
+.newsContentLeft:hover .newsMore i{
+    transform:translateX(10px);
+    transition: all 0.2s;
 }
 .newsContentLeft img{
     width: 100%;
-    height: 240px;
+    height: 220px;
+    border-radius: 7px 7px 0 0;
 }
 .newsContentLeftPicture{
-    width: 78%;
+    width: 80%;
     height: 200px;
     margin: 25px auto;
 }
 .newsWord{
-    font-size: 14px;
+    font-size: 13px;
     color: #717171;
 }
+.newsContentHide{
+    display: none;
+}
 .newsContentLeftPicture b{
-    font-size: 22px;
+    font-size: 20px;
 }
 .newsContentLeftPicture span{
     line-height: 30px;
@@ -980,23 +1337,82 @@
     float: left;
     width: 40%;
     height: 350px;
-    margin-left: 13%;
+    margin-left: 10%;
 }
 .newsRightWord{
     font-size: 14px;
     color: #717171;
 }
 .newsRightWord2{
-    font-size: 18px;
+    font-size: 16px;
 }
 .newsRightWord2 a{
     text-decoration: none;
     color: black;
 }
+.newsRightWord2 a:hover{
+    text-decoration: underline;
+}
 .newsContentRight span{
     line-height: 25px;
 }
+@media screen and (max-width: 1078px){
+    .newsLogoRight{
+        margin-left: 60%;
+    }
+    .newsContentLeft{
+        width: 50%;
+        margin-left: 0;
+    }
+    .newsContentRight{
+        margin-left: 5%;
+    }
+}
+@media screen and (max-width: 689px) {
+    .news{
+        width: 100%;
+        height: 880px;
+        margin-left: 0;
+    }
+    .newsContent{
+        width: 100%;
+        height: 940px;
+    }
+    .newsContentLeft{
+        width: 100%;
+        height: 440px;
+    }
+    .newsContentLeft img{
+        width: 100%;
+        border-radius: 0;
+        height: 200px;
+    }
+    .newsContentLeftPicture{
+        width: 100%;
+        text-align: center;
+    }
+    .newsWord{
+        margin: 0 auto;
+    }
+    .newsContentLeftPicture span b{
+        font-size: 17px;
+    }
+    .newsContentHide{
+        display: block;
+        line-height: 20px;
+        margin-top: 10px;
+    }
 
+    .newsMore{
+        display: none;
+    }
+    .newsContentRight{
+        height: 390px;
+        width: 100%;
+        margin-left: 2%;
+        margin-top: 60px;
+    }
+}
 /*结尾*/
 .foot{
     width: 100%;
