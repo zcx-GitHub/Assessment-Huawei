@@ -1,3 +1,4 @@
+/*小黑条-网站下滑*/
 $(function () {
     $("#websiteDown").click(function () {
         $(".huaweiWebsite-hide").slideToggle("slow");
@@ -11,6 +12,8 @@ $(function () {
         $(".selectWhere>i").css("transform","rotate(180deg)");
     });
 });
+
+/*导航栏下滑*/
 $(function () {
     $(".logoLeftIphone").hover(function () {
         $(".logoLeft-hide").css("display","block");
@@ -32,8 +35,10 @@ $(function () {
         })
     });
 });
+
+/*导航栏搜索切换*/
 $(function () {
-    $(".logoSearch").click(function () {
+    $(".logoSearchSearch").click(function () {
         $(".huaweiLogo").css("display","none");
         $(".logoHideSearch").css("display","block");
     });
@@ -42,6 +47,8 @@ $(function () {
         $(".huaweiLogo").css("display","block");
     });
 });
+
+/*导航栏选项切换*/
 $(function () {
     $(".user").click(function () {
         $(".hideServe-content1").css("display","block");
@@ -60,12 +67,17 @@ $(function () {
     })
 });
 
+
+
+
+
 /*轮播图*/
 $(function () {
     var i = 0;
+    var m = $(".imgChange").width();
     var clone = $(".imgChange").first().clone();//克隆第一张图片
-    $(".imgTransparent").append(clone);                //复制到列表最后
-    var size = $(".imgChange").size();         //返回匹配元素的数量
+    $(".imgTransparent").append(clone);    //复制到列表最后,append()方法在被选元素的结尾插入指定内容
+    var size = $(".imgChange").size();   //返回匹配元素的数量
     console.log(size);
 
     /*循环图片容器的数量，并且向点点按钮的大容器添加几个子节点作为点点按钮*/
@@ -95,7 +107,7 @@ $(function () {
     $(".num li").click(function () {
         var index = $(this).index();//获取当前索引值
         i = index;
-        $(".imgTransparent").stop().animate({ left: -index * 1200}, 500);
+        $(".imgTransparent").stop().animate({ left: -index * m}, 500);
         /*siblings()方法返回被选元素的所有同级元素，同级元素是共享相同父元素的元素*/
         $(this).addClass("on").siblings().removeClass("on");
     });
@@ -118,10 +130,10 @@ $(function () {
             i = 1;
         }
         if (i === -1) {
-            $(".imgTransparent").css({ left: -(size - 1) * 1200 });
+            $(".imgTransparent").css({ left: -(size - 1) * m });
             i = size - 2;
         }
-        $(".imgTransparent").stop().animate({ left: -i * 1200 }, 700);
+        $(".imgTransparent").stop().animate({ left: -i * m }, 700);
         if (i === size - 1) {
             $(".num li").eq(0).addClass("on").siblings().removeClass("on");
         } else {
@@ -134,6 +146,7 @@ $(function () {
 /*展会活动轮播图*/
 $(function () {
     var i = 0;
+    var n = $(".activityLiLeft").width();
     var clone = $(".activityLiLeft").first().clone();
     $(".activityBannerChange").append(clone);
     var size = $(".activityLiLeft").size();
@@ -161,7 +174,7 @@ $(function () {
     $(".activityNum li").click(function () {
         var index = $(this).index();
         i = index;
-        $(".activityBannerChange").stop().animate({ left: -index * 1100}, 500);
+        $(".activityBannerChange").stop().animate({ left: -index * n}, 500);
         $(this).addClass("on").siblings().removeClass("on");
     });
 
@@ -181,10 +194,10 @@ $(function () {
             i = 1;
         }
         if (i === -1) {
-            $(".activityBannerChange").css({ left: -(size - 1) * 1100 });
+            $(".activityBannerChange").css({ left: -(size - 1) * n });
             i = size - 2;
         }
-        $(".activityBannerChange").stop().animate({ left: -i * 1100 }, 700);
+        $(".activityBannerChange").stop().animate({ left: -i * n }, 700);
         if (i === size - 1) {
             $(".activityNum li").eq(0).addClass("on").siblings().removeClass("on");
         } else {
@@ -195,4 +208,29 @@ $(function () {
 
 
 
+/*导航栏自适应*/
+$(function () {
+    $(".logoSearchHide").click(function () {
+        $(".logoAdaption").animate({marginLeft:"0"});
+        $(".logoSearchHide").hide();
+        $(".logoSearchError").show();
+    });
+    $(".logoSearchError").click(function () {
+        $(".logoAdaption").animate({marginLeft:"100%"});
+        $(".logoSearchError").hide();
+        $(".logoSearchHide").show();
+    })
+});
 
+$(function () {
+    $(".adaptionArrow").click(function () {
+        $(".logoAdaptionUlHide1").slideToggle("slow");
+        $(".logoAdaption").css("height","750px");
+    })
+});
+$(function () {
+    $(".adaptionArrow2").click(function () {
+        $(".logoAdaptionUlHide2").slideToggle("slow");
+        $(".logoAdaption").css("height","1200px");
+    })
+});

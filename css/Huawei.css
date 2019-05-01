@@ -62,7 +62,7 @@
     margin: 50px auto;
 }
 .huaweiWebsite-hide ul li{
-    width: 20%;
+    width: 21%;
     display: inline-block;
     margin-left: 3%;
 }
@@ -100,7 +100,7 @@
     width: 100%;
     height: 68px;
     box-shadow: 0 3px 3px #aaaaaa;
-    z-index: 1;
+    z-index: 3;
     position: relative;
 }
 .logo{
@@ -176,6 +176,11 @@
 .logoSearchHide{
     display: none;
 }
+.logoSearchError{
+    display: none;
+    float: right;
+    margin-top: 20px;
+}
 
 @media screen and (max-width: 1055px){
     .logoCenterRight{
@@ -223,6 +228,75 @@
     }
 }
 
+
+/*导航栏自适应后登陆*/
+.logoAdaption{
+    width: 100%;
+    height: 450px;
+    z-index: 1000;
+    background-color: white;
+    position: absolute;
+    margin-left: 100%;
+}
+.logoAdaptionUl{
+    width: 100%;
+    list-style-type: none;
+    cursor: pointer;
+}
+.logoAdaptionUl li{
+    height: 26px;
+    padding: 10px;
+    background-color: #FFFFFF;
+    box-shadow: 0 1px 1px black;
+}
+.logoAdaptionUl li span{
+    font-size: 16px;
+}
+.logoAdaptionUl li a:hover{
+    text-decoration: underline;
+}
+.logoAdaptionUl li i{
+    float: right;
+}
+.logoAdaptionLi{
+    margin-top: 3px;
+    box-shadow: 3px 3px 3px #aaaaaa;
+}
+.logoAdaptionLi2{
+    margin-top: 3px;
+}
+.logoAdaptionUlHide{
+    list-style-type: none;
+    width: 100%;
+    display: none;
+}
+.logoAdaptionUlHide li{
+    width: 100%;
+   /* height: 40px;*/
+    padding-top: 15px;
+    background-color: white;
+    border-bottom: 1px solid #aaaaaa;
+    cursor: pointer;
+}
+.logoAdaptionUlHide li a{
+    margin-left: 5%;
+    font-size: 18px;
+}
+.land{
+    width: 94%;
+    height: 40px;
+    background-color: #F66F6A;
+    border-radius: 3px;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 18px;
+    border-style: none;
+    margin-top: 30px;
+    margin-left: 3%;
+    cursor: pointer;
+}
+
+
 /*导航条搜索切换*/
 .logoHideSearch{
     box-shadow: 0 3px 3px #aaaaaa;
@@ -246,7 +320,8 @@
 }
 .logoHideInput{
     float: left;
-    width: 330px;
+    /*width: 330px;*/
+    width: 30%;
     height: 40px;
     border-radius: 5px;
     border: 1px solid darkgray;
@@ -261,6 +336,15 @@
     margin-left: 89%;
     margin-top: -40px;
     cursor: pointer;
+}
+@media screen and (max-width: 768px){
+    .logoHidePicture{
+        display: none;
+    }
+    .logoHideInput{
+        width: 80%;
+        margin-left: 0;
+    }
 }
 
 /*导航栏鼠标触碰 手机，笔记本 展现内容*/
@@ -484,28 +568,28 @@
     position: relative;
     overflow: hidden;
 }
-.imgBanner .imgTransparent{
+.imgTransparent{
     width: 12000px;
     height: 520px;
     position: absolute;
     left: 0;
     top: 0;
 }
-.imgBanner .imgTransparent .imgChange{
+.imgChange{
     width: 1200px;
     height: 520px;
 }
-.imgBanner .imgTransparent li{
+.imgTransparent li{
     float: left;
 }
-.imgBanner .num {
+.num {
     position: absolute;
     width: 100%;
     bottom: 100px;
-    left: 400px;
+    left: 35%;
     text-align: center;
 }
-.imgBanner .num li {
+.num li {
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -514,10 +598,10 @@
     margin: 0 3px;
     cursor: pointer;
 }
-.imgBanner .num li.on {
+.on {
     background-color: black;
 }
-.imgBanner .btn {
+.btn {
     width: 30px;
     height: 50px;
     opacity: 0.5;
@@ -533,7 +617,7 @@
     color: orangered;
     display: none;
 }
-.imgBanner .btn_l {
+.btn_l {
     left: 10px;
 }
 .imgBanner .btn_r {
@@ -718,21 +802,29 @@
 .movieWordThree{
     font-size: 5px;
 }
+.knowMoreArrow{
+    transition: all 0.5s;
+}
 .movieLeft:hover .knowMoreArrow{
     transform: translateX(10px);
-    transition: all 0.3s;
+}
+.moviePhone{
+    transition: all 0.5s;
 }
 .movieLeft:hover .moviePhone{
     transform: translateY(-20px);
-    transition: all 0.3s;
+}
+.moviePictureShadow{
+    transition: all 0.5s;
 }
 .movieLeft:hover .moviePictureShadow{
     transform: translateY(20px);
-    transition: all 0.3s;
+}
+.knowMoreArrow2{
+    transition: all 0.5s;
 }
 .movieRight:hover .knowMoreArrow2{
-    transform: translateX(10px);
-    transition: all 0.3s;
+    transform: translateX(15px);
 }
 .movieRight{
     float: left;
@@ -888,10 +980,10 @@
 .neverSeeArrow{
     font-size: 25px;
     margin-left: 15px;
+    transition: all 0.5s;
 }
 .neverSeeKnowMore:hover .neverSeeArrow{
     transform: translateX(20px);
-    transition: all 0.2s;
 }
 @media screen and (max-width: 1200px){
     .neverSee{
@@ -923,8 +1015,9 @@
 /*展会活动*/
 .activity{
     width: 90%;
-    height: 500px;
-    margin: 200px auto;
+    height: 700px;
+    margin-top: 150px;
+    margin-left: 5%;
 }
 .activityLogo{
     width: 100%;
@@ -940,10 +1033,10 @@
 }
 .activityLogoArrow{
     margin-left: 20px;
+    transition: all 0.5s;
 }
 .activityLogoRight:hover .activityLogoArrow{
     transform: translateX(20px);
-    transition: all 0.2s;
 }
 
 /*展会活动轮播图*/
@@ -1016,7 +1109,7 @@
 }
 
 .activityLiLeftContent{
-    width: 600px;
+    width: 55%;
     height: 480px;
     margin-top: 100px;
     background-color: #DCE6EE;
@@ -1024,7 +1117,7 @@
     float: left;
 }
 .activityWord{
-    width: 400px;
+    width: 66%;
     height: 300px;
     margin: 60px auto;
 
@@ -1048,8 +1141,8 @@
     font-size: 25px;
 }
 .activityPicture{
-    margin-left: 600px;
-    width: 500px;
+    margin-left: 55%;
+    width: 45%;
     height: 560px;
     margin-top: 50px;
     border-radius: 7px;
@@ -1058,7 +1151,6 @@
     border-radius: 7px;
 }
 .activityEllipsis{
-    max-width: 400px;
     overflow: hidden;
     text-overflow: ellipsis;
    /*文字超出一行，省略超出部分，显示’…’
@@ -1070,11 +1162,13 @@
     -webkit-line-clamp: 4;
 }
 
+
 /*成功故事*/
 .successStory{
     width: 90%;
     height: 530px;
-    margin: auto;
+    margin-top: 100px;
+    margin-left: 5%;
 }
 .successStoryLogo{
     width: 96%;
@@ -1095,16 +1189,17 @@
 .successStoryLogoRight i{
     margin-left: 10px;
 }
+.successLogoI{
+    transition: all 0.5s;
+}
 .successStoryLogoRight:hover .successLogoI{
-    transform: translateX(10px);
-    transition: all 0.2s;
+    transform: translateX(15px);
 }
 .successStoryPicture{
     width: 96%;
     height: 400px;
     margin-left: 2%;
     margin-top: 65px;
-    /*overflow: hidden;*/
 }
 .successStoryPictureContent{
     width: 30%;
@@ -1145,26 +1240,42 @@
 .knowMoreArrow6{
     margin-left: 10px;
 }
+.successPicture1{
+    transition: all 0.5s;
+}
 .content1:hover .successPicture1{
     transform: translateX(-25px);
+
+}
+.successPicture2{
+    transition: all 0.5s;
 }
 .content2:hover .successPicture2{
     transform: translateX(-25px);
 }
+.successPicture3{
+    transition: all 0.5s;
+}
 .content3:hover .successPicture3{
     transform: translateX(-25px);
 }
+.knowMoreArrow4{
+    transition: all 0.5s;
+}
 .content1:hover .knowMoreArrow4{
      transform:translateX(10px);
-    transition: all 0.2s;
+}
+.knowMoreArrow5{
+    transition: all 0.5s;
 }
 .content2:hover .knowMoreArrow5{
     transform:translateX(10px);
-    transition: all 0.2s;
+}
+.knowMoreArrow6{
+    transition: all 0.5s;
 }
 .content3:hover .knowMoreArrow6{
     transform:translateX(10px);
-    transition: all 0.2s;
 }
 @media screen and (max-width: 889px){
     .successStoryPicture{
@@ -1214,7 +1325,7 @@
         transform:none;
     }
 }
-@media screen and (max-width: 689px){
+@media screen and (max-width: 768px){
     .successStory{
         height: 600px;
     }
@@ -1281,9 +1392,11 @@
     font-size: 25px;
     margin-left: 10px;
 }
-.newsLogoRight:hover .newsLogoRight i{
-    transform:translateX(10px);
-    transition: all 0.2s;
+.newsLogoArrow{
+    transition: all 0.5s;
+}
+.newsLogoRight:hover .newsLogoArrow{
+    transform:translateX(15px);
 }
 .newsContent{
     width: 100%;
@@ -1300,9 +1413,11 @@
     border-radius: 7px 7px 7px 7px;
     cursor: pointer;
 }
-.newsContentLeft:hover .newsMore i{
+.newsMoreArrow{
+    transition: all 0.5s;
+}
+.newsContentLeft:hover .newsMoreArrow{
     transform:translateX(10px);
-    transition: all 0.2s;
 }
 .newsContentLeft img{
     width: 100%;
@@ -1466,6 +1581,24 @@
 }
 .aboutBranchLi a:hover{
     text-decoration:underline;
+}
+.aboutArrow1{
+    transition: all 0.5s;
+}
+.aboutBranchLogo1:hover .aboutArrow1{
+    transform: translateX(15px);
+}
+.aboutArrow2{
+    transition: all 0.5s;
+}
+.aboutBranchLogo2:hover .aboutArrow2{
+    transform: translateX(15px);
+}
+.aboutArrow3{
+    transition: all 0.5s;
+}
+.aboutBranchLogo3:hover .aboutArrow3{
+    transform: translateX(15px);
 }
 .entranceWebsiteLogo{
     width: 97%;
